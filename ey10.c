@@ -7,9 +7,8 @@ int main(){
   char inputPassword[6];
 
   printf("Give me a haslo mordeczko: ");
-  //scanf("%s", &inputPassword);
+  //scanf("%s", &inputPassword); //It does not work
   gets(inputPassword);
-
 
   !strcmp(password, inputPassword) ? printf("Zalogowany\n") : printf("Zle haslo\n");
 
