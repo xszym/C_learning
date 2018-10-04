@@ -10,10 +10,11 @@ int main(){
     printf("2. Jaki dzis dzien\n");
     printf("3. Jaki mamy rok\n");
 
-    scanf("%d", &a);
+    scanf("%d" &a);
 
-  } while (a > 1 || a > 3);
-
+  } while (a < 1 && a > 3){
+      exit(0);
+  };
 
 
     return 0;
