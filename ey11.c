@@ -6,11 +6,11 @@ zmiennoprzecinkowe długości podstaw i wysokość trapezu. Następnie program
 powinien obliczyć i wyświetlić na standardowym wyjściu pole tej figury
 */
 int main(){
-  int a, b, h;
+  float a, b, h;
 
   printf("Polotrapezoinator podaj:[Podstawa podstawa wysokosc]\n");
-  scanf("%d %d %d", &a, &b, &h);
-  printf("Pole to %d\n", (a+b)/2*h);
+  scanf("%f %f %f", &a, &b, &h);
+  printf("Pole to %f\n", (a+b)/2*h);
 
   return 0;
 }
