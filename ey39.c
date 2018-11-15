@@ -36,23 +36,23 @@ int main(){
   */
 
   //OR ANOTHER
-  int tablica[n];
+  int array[n];
 
   for(int i = 0; i < n; i++){
     int x;
     scanf("%d", &x);
-    tablica[i] = x;
+    array[i] = x;
   }
 
   int sum = 0;
-  int min = tablica[0];
+  int min = array[0];
   int max = 0;
   int evenCount = 0;
   for(int i = 0; i < n; i++){
-    sum += tablica[i];
-    if(tablica[i] < min) min = tablica[i];
-    if(tablica[i] > max) max = tablica[i];
-    if(!(tablica[i] % 2)) evenCount++;
+    sum += array[i];
+    if(array[i] < min) min = array[i];
+    if(array[i] > max) max = array[i];
+    if(!(array[i] % 2)) evenCount++;
   }
 
   printf("%d (average)\n", sum / n);
@@ -60,4 +60,30 @@ int main(){
   printf("%d (min)\n", min);
   printf("%d (max)\n", max);
   printf("%d (evenNumbers)\n", evenCount);
+
+  //PRINT ELEMENT ONLY ONE TIME
+  for(int i = 0; i < n; i++){
+    for(int j = 0; j < i; j++)
+      if(array[j] == array[i]) goto end;
+    printf("%d, ", array[i]);
+    end:;
+  }
+
+  //BUBBLE SORT XD
+  for(int i = 0; i < n; i++){
+    for(int j = 0; j < n - 1; j++){
+      if(array[j] > array[j + 1]){
+        int temp = array[j + 1];
+        array[j + 1] = array[j];
+        array[j] = temp;
+      }
+    }
+  }
+
+  //MEDIANA
+  printf("\nmediana: %f", n%2 ? array[n/2] : ((float) array[n/2 - 1] + array[n/2]) / 2);
+
+  //PRINT elements
+  for(int i = 0; i < n; i++)
+    printf("\n%d = %d, ", i, array[i]);
 }
