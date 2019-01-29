@@ -18,10 +18,10 @@ int min(const void * a, const void * b){
 }
 
 int main(){
-  int arr1[] = {1.f, 2.f, 4.f, 14.f, -13.f, 141.f, 4.f, -1.f, 0.f, -5.f};
+  float arr1[] = {3.f ,1.f, 2.f, 4.f, 14.f, -13.f, 141.f, 4.f, -1.f, 0.f, -5.f};
   int arr2[] = {1, 2, 4, 14, -13, 141, 4, -1, 0, -5};
 
-  qsort (arr1, 10, sizeof(float), min);
+  qsort (arr1, 10, sizeof(float), max);
 
   for(int i = 0; i < 10; i++)
     printf("%f, ", arr1[i]);

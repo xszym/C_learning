@@ -19,7 +19,7 @@ char *search(char str[], char str1[]){
 }
 
 int main(){
-  char str[] = "Ala ma kota", str1[] = "kota";
+  char str[] = "Ala ma kota", str1[] = "ma";
   char *found  = search(str, str1);
 
   if(found) printf("%s %d\n", found, found - str);

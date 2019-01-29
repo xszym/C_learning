@@ -19,7 +19,7 @@ int main(){
 
   srand(time(0));
   for(int i = 0; i < 100; i++)
-    printf("%f\n", f(-2, 2));
+    printf("%f\n", f(-3, 3));
 
   return 0;
 }

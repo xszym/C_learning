@@ -32,6 +32,7 @@ float *cross(float *v1, float *v2){
   temp[0]= v1[1] * v2[2] - v1[2] * v2[1];
   temp[1]= v1[2] * v2[0] - v1[0] * v2[2];
   temp[2]= v1[0] * v2[1] - v1[1] * v2[0];
+  return temp;
 }
 
 void printf_v(float *v){
