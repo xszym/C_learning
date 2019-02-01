@@ -10,7 +10,7 @@ int main(){
 
   scanf("%99s", str);
   strncpy(str_cpy, str, sizeof str_cpy - 1);
-  strncat(str_cpy, p, sizeof str_cpy - strlen(str_cpy) - 1);
+  strncat(str, p, sizeof str_cpy - strlen(str_cpy) - 1);
 
   printf("%s\n", str_cpy);
 

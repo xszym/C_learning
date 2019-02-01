@@ -8,7 +8,7 @@ char *search(char str[], char str1[]){
     bool found;
     for(int i = 0; str[i]; i++){
       found = true;
-      for(int j; j < str1[j] && str[i + j]; j++)
+      for(int j = 0; j < str1[j] && str[i + j]; j++)
         if(str1[j] != str[i + j]){
             found = false;
             break;
